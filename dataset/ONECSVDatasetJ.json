@@ -13,6 +13,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "@item().name",
 				"folderPath": "test",
 				"fileSystem": "mantenimiento"
 			},
