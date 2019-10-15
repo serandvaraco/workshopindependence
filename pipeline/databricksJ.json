@@ -1,0 +1,58 @@
+{
+	"name": "databricksJ",
+	"properties": {
+		"activities": [
+			{
+				"name": "DLtoDBJ",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/bidesarrollo@independence.com.co/Independence 1/1. ImportDLtoDB"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricksIndependence",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "c_DATAJ",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "DLtoDBJ",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/bidesarrollo@independence.com.co/Independence 1/2. Characterization_data"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricksIndependence",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"folder": {
+			"name": "Jessi"
+		},
+		"annotations": []
+	}
+}
