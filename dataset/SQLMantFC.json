@@ -1,0 +1,19 @@
+{
+	"name": "SQLMantFC",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseEcopetrol",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Felipe dataset"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "MANT",
+			"table": "testFC"
+		}
+	}
+}

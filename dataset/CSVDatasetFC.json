@@ -1,0 +1,1371 @@
+{
+	"name": "CSVDatasetFC",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Felipe dataset"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "test",
+				"fileSystem": "mantenimiento"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ts",
+				"type": "String"
+			},
+			{
+				"name": "MOTOR_DIRECTION_1",
+				"type": "String"
+			},
+			{
+				"name": "HMI_SET_POS_1",
+				"type": "String"
+			},
+			{
+				"name": "SET_BIT_FREE_WEIGHT_HMI_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_RESET_STROKES_1",
+				"type": "String"
+			},
+			{
+				"name": "HL_REVERSE_DIRECTION_1",
+				"type": "String"
+			},
+			{
+				"name": "HK_N_EQUAL_S_1",
+				"type": "String"
+			},
+			{
+				"name": "BIT_RESET_CURRENT_POS_1",
+				"type": "String"
+			},
+			{
+				"name": "BIT_ADJUST_CURRENT_POS_1",
+				"type": "String"
+			},
+			{
+				"name": "_NPT_GUARDAR_1",
+				"type": "String"
+			},
+			{
+				"name": "USER_OPERATOR_GRANTED_1",
+				"type": "String"
+			},
+			{
+				"name": "USER_SUPERVISOR_GRANTED_1",
+				"type": "String"
+			},
+			{
+				"name": "USER_INDEPENDENCE_GRANTED_1",
+				"type": "String"
+			},
+			{
+				"name": "USER_PROCTEK_GRANTED_1",
+				"type": "String"
+			},
+			{
+				"name": "USER_IS_LOGGED_1",
+				"type": "String"
+			},
+			{
+				"name": "USER_LOGOUT_1",
+				"type": "String"
+			},
+			{
+				"name": "RESET_BLOCK_POS_1",
+				"type": "String"
+			},
+			{
+				"name": "SELECTED_I_CH_HOOKLOAD_1",
+				"type": "String"
+			},
+			{
+				"name": "SELECTED_I_CH_STANDPIPE_1",
+				"type": "String"
+			},
+			{
+				"name": "SELECTED_I_CH_T_ROTARY_1",
+				"type": "String"
+			},
+			{
+				"name": "SELECTED_I_CH_T_WRENCH_1",
+				"type": "String"
+			},
+			{
+				"name": "HK_N_SETPOINT_1",
+				"type": "String"
+			},
+			{
+				"name": "HK_S_SETPOINT_1",
+				"type": "String"
+			},
+			{
+				"name": "_USER_SELECTED_HMI_1",
+				"type": "String"
+			},
+			{
+				"name": "_USER_INTRODUCED_PWD_HMI_1",
+				"type": "String"
+			},
+			{
+				"name": "CAMPO_SELECCIONADO_1",
+				"type": "String"
+			},
+			{
+				"name": "OPERADORA_SELECCIONADO_1",
+				"type": "String"
+			},
+			{
+				"name": "RIG_INGRESADO_1",
+				"type": "String"
+			},
+			{
+				"name": "POZO_INGRESADO_1",
+				"type": "String"
+			},
+			{
+				"name": "_NPT_HMI_DIA_1",
+				"type": "String"
+			},
+			{
+				"name": "_NPT_HMI_MES_1",
+				"type": "String"
+			},
+			{
+				"name": "_NPT_HMI_ANO_1",
+				"type": "String"
+			},
+			{
+				"name": "_NPT_HMI_HORAS_1",
+				"type": "String"
+			},
+			{
+				"name": "_NPT_DIA_1",
+				"type": "String"
+			},
+			{
+				"name": "_NPT_MES_1",
+				"type": "String"
+			},
+			{
+				"name": "_NPT_ANO_1",
+				"type": "String"
+			},
+			{
+				"name": "_NPT_HORAS_1",
+				"type": "String"
+			},
+			{
+				"name": "POS_PERCENT_HEIGHT_1",
+				"type": "String"
+			},
+			{
+				"name": "POS_REAL_HEIGHT_1",
+				"type": "String"
+			},
+			{
+				"name": "TOTAL_HEIGHT_1",
+				"type": "String"
+			},
+			{
+				"name": "VEL_BLOCK_PER_MIN_1",
+				"type": "String"
+			},
+			{
+				"name": "EuMax_Hookload_User_1",
+				"type": "String"
+			},
+			{
+				"name": "EuMin_Hookload_User_1",
+				"type": "String"
+			},
+			{
+				"name": "EuMax_STANDPIPE_1",
+				"type": "String"
+			},
+			{
+				"name": "EuMin_STANDPIPE_1",
+				"type": "String"
+			},
+			{
+				"name": "EuMax_T_ROTARY_1",
+				"type": "String"
+			},
+			{
+				"name": "EuMin_T_ROTARY_1",
+				"type": "String"
+			},
+			{
+				"name": "EuMax_T_WRENCH_1",
+				"type": "String"
+			},
+			{
+				"name": "EuMin_T_WRENCH_1",
+				"type": "String"
+			},
+			{
+				"name": "PSI_Max_Hookload_User_1",
+				"type": "String"
+			},
+			{
+				"name": "PSI_Min_Hookload_User_1",
+				"type": "String"
+			},
+			{
+				"name": "I_INPUT_MAX_STANDPIPE_1",
+				"type": "String"
+			},
+			{
+				"name": "I_INPUT_MIN_STANDPIPE_1",
+				"type": "String"
+			},
+			{
+				"name": "I_INPUT_MAX_T_ROTARY_1",
+				"type": "String"
+			},
+			{
+				"name": "I_INPUT_MIN_T_ROTARY_1",
+				"type": "String"
+			},
+			{
+				"name": "I_INPUT_MAX_T_WRENCH_1",
+				"type": "String"
+			},
+			{
+				"name": "I_INPUT_MIN_T_WRENCH_1",
+				"type": "String"
+			},
+			{
+				"name": "HOOKLOAD_VAL_1",
+				"type": "String"
+			},
+			{
+				"name": "STANDPIPE_VAL_1",
+				"type": "String"
+			},
+			{
+				"name": "T_ROTARY_VAL_1",
+				"type": "String"
+			},
+			{
+				"name": "T_WRENCH_VAL_1",
+				"type": "String"
+			},
+			{
+				"name": "BIT_WEIGHT_FREE_1",
+				"type": "String"
+			},
+			{
+				"name": "BIT_WEIGHT_FREE_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_DIAM_CAMISA_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_LONG_STROKE_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_STROKES_COUNTER_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_STROKES_PER_MINUTE_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_Q_GAL_MIN_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_Q_BBL_MIN_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_Q_GAL_STRK (acumulado)_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_Q_BBL_STRK (acumulado)_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_CARGA_BIELA_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_AREA_CAMISA_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_PRESION_BOMBA_1",
+				"type": "String"
+			},
+			{
+				"name": "HK_EFF_VALUE_1",
+				"type": "String"
+			},
+			{
+				"name": "HK_TENSION_LINEA_RAPIDA_1",
+				"type": "String"
+			},
+			{
+				"name": "BIT_CURRENT_POS_1",
+				"type": "String"
+			},
+			{
+				"name": "HK_MIN_HOOKLOAD_VALUE_1",
+				"type": "String"
+			},
+			{
+				"name": "BIT_FACTOR_CURRENT_POS_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_EFF_VOLUMETRICA_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_FACTOR_GAL_STRK_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_FACTOR_BBL_STRK_1",
+				"type": "String"
+			},
+			{
+				"name": "HK_K_SETPOINT_1",
+				"type": "String"
+			},
+			{
+				"name": "WRENCH_AJUSTE_CURVA_1",
+				"type": "String"
+			},
+			{
+				"name": "WRENCH_LONGITUDE_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_VEL_MAX_BLOCK_UP_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_VEL_MAX_BLOCK_DOWN_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_MAX_CARGA_ESTATICA_HL_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_MAX_CARGA_DINAMICA_HL_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_MAX_CARGA_CORONA_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_VEL_MAX_ROTARIA_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_T_MAX_ROTARIA_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_TENSION_MAX_LINEA_RAPIDA_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_MAX_VEL_CARRETERA_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_MAX_STROKES_BOMBA_LODOS_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_MAX_PRESION_BOMBA_LODOS_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_MAX_CARGA_SOBRE_BIELA_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_HM_CAUDAL_AGUA_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_MAX_DELTA_TEMP_1",
+				"type": "String"
+			},
+			{
+				"name": "PAR_HM_CALOR_ESPECIFICO_1",
+				"type": "String"
+			},
+			{
+				"name": "HM_HP_TOTAL_1",
+				"type": "String"
+			},
+			{
+				"name": "ROTARY_RPM_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_ENG_TEMP_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_ENG_TEMP_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_ENG_PRES_OIL_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_ENG_PRES_OIL_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_TRA_TEMP_OIL_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_TRA_TEMP_OIL_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_TRA_PRES_OIL_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_TRA_PRES_OIL_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_STANDPIPE_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_STANDPIPE_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_T_ROTARY_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_T_ROTARY_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_T_WRENCH_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_T_WRENCH_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BLOCK_POS_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BLOCK_POS_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN_ENG_TEMP_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN_ENG_TEMP_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN_ENG_PRES_OIL_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN_ENG_PRES_OIL_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN_LOAD_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN_LOAD_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN_FREQ_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN_FREQ_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN_CURRENT_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN_CURRENT_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN_FP_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN_FP_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_ENG_TEMP_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_ENG_TEMP_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_ENG_PRES_OIL_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_ENG_PRES_OIL_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_TRA_TEMP_OIL_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_TRA_TEMP_OIL_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_TRA_PRES_OIL_HI_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_TRA_PRES_OIL_LO_SP_1",
+				"type": "String"
+			},
+			{
+				"name": "DIAMETRO_ROTARIA_1",
+				"type": "String"
+			},
+			{
+				"name": "T_WRENCH_MIN_1",
+				"type": "String"
+			},
+			{
+				"name": "T_WRENCH_MAX_1",
+				"type": "String"
+			},
+			{
+				"name": "BIT_WEIGHT_FREE_ABS_1",
+				"type": "String"
+			},
+			{
+				"name": "HP_GANCHO_1",
+				"type": "String"
+			},
+			{
+				"name": "HP_ROTARY_1",
+				"type": "String"
+			},
+			{
+				"name": "GIVEN_HEIGHT_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_ENGINE_OIL_PRESSURE_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_ENGINE_OIL_TEMP_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_FUEL_USED_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_ENGINE_HOURS_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_ENGINE_TORQUE_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_TRANSMISION_OIL_PRESSURE_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_TRANSMISION_OIL_TEMP_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_CURRENT_GEAR_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_SELECTED_GEAR_LOGIC_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_ENGINE_RPM_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_STATUS_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_FREQ_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_FP_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_ENGINE_OIL_PRESS_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_ENGINE_OIL_TEMP_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_FUEL_USED_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_ENGINE_HOURS_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_LOAD_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_STATUS_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_FREQ_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_FP_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_ENGINE_OIL_PRESS_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_ENGINE_OIL_TEMP_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_FUEL_USED_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_ENGINE_HOURS_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_LOAD_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_CURRENT_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_FREQ_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_FP_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_ENGINE_OIL_PRESS_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_ENGINE_OIL_TEMP_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_FUEL_USED_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_ENGINE_HOURS_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_LOAD_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_ENGINE_OIL_PRESSURE_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_ENGINE_OIL_TEMP_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_FUEL_USED_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_ENGINE_HOURS_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_ENGINE_TORQUE_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_TRANSMISION_OIL_PRESSURE_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_TRANSMISION_OIL_TEMP_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_SPEED_KM_H_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_SELECTED_GEAR_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_ENGINE_RPM_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_ENGINE_STATUS_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_ENGINE_STATUS_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_SELECTED_GEAR_1",
+				"type": "String"
+			},
+			{
+				"name": "VALOR LECTURA GASES H2S_1",
+				"type": "String"
+			},
+			{
+				"name": "VALOR LECTURA GASES INFLAMABLES LEL_1",
+				"type": "String"
+			},
+			{
+				"name": "PRESION DE SUCCIÓN DEL TURBOCARGADOR MOTOR 1 UNIDAD BASICA_1194",
+				"type": "String"
+			},
+			{
+				"name": "Torque Unidad Basica_1",
+				"type": "String"
+			},
+			{
+				"name": "RPM Unidad Basica_1",
+				"type": "String"
+			},
+			{
+				"name": "Horometro Unidad Basica_1",
+				"type": "String"
+			},
+			{
+				"name": "Consumo Combustible Unidad Basica_1",
+				"type": "String"
+			},
+			{
+				"name": "Temperatura Motor Unidad Basica_1",
+				"type": "String"
+			},
+			{
+				"name": "Presion Aceite Unidad Basica_1",
+				"type": "String"
+			},
+			{
+				"name": "Velocidad Unidad Basica_1",
+				"type": "String"
+			},
+			{
+				"name": "Presion Aceite Tr Unidad Basica_1",
+				"type": "String"
+			},
+			{
+				"name": "Temperatura Aceite Tr Unidad Basica_1",
+				"type": "String"
+			},
+			{
+				"name": "Cambio Unidad Basica_1",
+				"type": "String"
+			},
+			{
+				"name": "PRESION DE SUCCIÓN DEL TURBOCARGADOR MOTOR 1 UNIDAD BASICA_1205",
+				"type": "String"
+			},
+			{
+				"name": "PRESION DE SUCCIÓN DEL TURBOCARGADOR MOTOR B. LODOS_1",
+				"type": "String"
+			},
+			{
+				"name": "PRESION DE SUCCIÓN DEL TURBOCARGADOR GENERADOR 1_1",
+				"type": "String"
+			},
+			{
+				"name": "PRESION DE SUCCIÓN DEL TURBOCARGADOR GENERADOR 2_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_ENG_TEMP_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_ENG_PRES_OIL_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_ENG_PRES_OIL_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_TRA_TEMP_OIL_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_TRA_TEMP_OIL_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_TRA_PRES_OIL_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_UB_TRA_PRES_OIL_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_STANDPIPE_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_STANDPIPE_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_T_ROTARY_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_T_ROTARY_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_T_WRENCH_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_T_WRENCH_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BLOCK_POS_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BLOCK_POS_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN1_ENG_TEMP_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN1_ENG_TEMP_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN1_ENG_PRES_OIL_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN1_ENG_PRES_OIL_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN1_LOAD_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN1_LOAD_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN1_FREQ_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN1_FREQ_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN1_CURRENT_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN1_CURRENT_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN1_FP_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN1_FP_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN2_ENG_TEMP_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN2_ENG_TEMP_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN2_ENG_PRES_OIL_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN2_ENG_PRES_OIL_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN2_LOAD_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN2_LOAD_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN2_FREQ_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN2_FREQ_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN2_CURRENT_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN2_CURRENT_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN2_FP_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_GEN2_FP_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_ENG_TEMP_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_ENG_TEMP_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_ENG_PRES_OIL_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_ENG_PRES_OIL_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_TRA_TEMP_OIL_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_TRA_TEMP_OIL_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_TRA_PRES_OIL_HI_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_BL_TRA_PRES_OIL_LO_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_PAR_VEL_MAX_BLOCK_UP_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_PAR_VEL_MAX_BLOCK_DOWN_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_PAR_VEL_MAX_ROTARIA_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_PAR_T_MAX_ROTARIA_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_PAR_TENSION_MAX_LINEA_RAPIDA_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_PAR_MAX_PRESION_BOMBA_LODOS_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_PAR_MAX_STROKES_BOMBA_LODOS_1",
+				"type": "String"
+			},
+			{
+				"name": "ALR_PAR_MAX_CARGA_SOBRE_BIELA_1",
+				"type": "String"
+			},
+			{
+				"name": "MU IZI OFFLINE INDICATOR_1",
+				"type": "String"
+			},
+			{
+				"name": "MU LAST IZINETERROR_1",
+				"type": "String"
+			},
+			{
+				"name": "GR OFFLINE INDICATOR_1",
+				"type": "String"
+			},
+			{
+				"name": "GR IZI LAST IZINETERROR_1",
+				"type": "String"
+			},
+			{
+				"name": "NumActivo_CTR_MU_1",
+				"type": "String"
+			},
+			{
+				"name": "NumActivo_CTRL_BL_1",
+				"type": "String"
+			},
+			{
+				"name": "GEN_NumActivo_MT1_1",
+				"type": "String"
+			},
+			{
+				"name": "GEN_NumActivo_MT2_1",
+				"type": "String"
+			},
+			{
+				"name": "NumActivo_GR1_1",
+				"type": "String"
+			},
+			{
+				"name": "NumActivo_GR2_1",
+				"type": "String"
+			},
+			{
+				"name": "NumActivo_Analizador_1",
+				"type": "String"
+			},
+			{
+				"name": "POWERTONG_VAL_1",
+				"type": "String"
+			},
+			{
+				"name": "POWERTONG_LONGITUDE_1",
+				"type": "String"
+			},
+			{
+				"name": "POWERTONG_AJUSTE_1",
+				"type": "String"
+			},
+			{
+				"name": "T_POWERTONG_MIN_1",
+				"type": "String"
+			},
+			{
+				"name": "T_POWERTONG_MAX_1",
+				"type": "String"
+			},
+			{
+				"name": "BOP_VAL_1",
+				"type": "String"
+			},
+			{
+				"name": "PRESION_BL_VAL_1",
+				"type": "String"
+			},
+			{
+				"name": "T_ROTARY_CHANNEL_VAL_1",
+				"type": "String"
+			},
+			{
+				"name": "T_ROTARY_ZERO_VAL_1",
+				"type": "String"
+			},
+			{
+				"name": "M_REAL_HEIGHT_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_CURRENT_L1_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_CURRENT_L2_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_CURRENT_L3_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_VOLTAGE_L1-N_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_VOLTAGE_L2-N_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_VOLTAGE_L3-N_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_VOLTAGE_L1-L2_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_VOLTAGE_L2-L3_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_VOLTAGE_L3-L1_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_CONSUMO_ESPC_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_BOOST_PRESSURE_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_VOLTAJE_BATERIA_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_POTENCIA_REAL_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN1_RPM_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_CURRENT_L1_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_CURRENT_L2_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_CURRENT_L3_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_VOLTAGE_L1-N_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_VOLTAGE_L2-N_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_VOLTAGE_L3-N_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_VOLTAGE_L1-L2_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_VOLTAGE_L2-L3_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_VOLTAGE_L3-L1_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_CONSUMO_ESPC_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_BOOST_PRESSURE_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_VOLTAJE_BATERIA_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_POTENCIA_REAL_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_GEN2_RPM_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_CURRENT_L1_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_CURRENT_L2_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_CURRENT_L3_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_VOLTAGE_L1-N_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_VOLTAGE_L2-N_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_VOLTAGE_L3-N_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_VOLTAGE_L1-L2_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_VOLTAGE_L2-L3_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_VOLTAGE_L3-L1_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_BOOST_PRESSURE_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_VOLTAJE_BATERIA_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_POTENCIA_REAL_1",
+				"type": "String"
+			},
+			{
+				"name": "GR_CUAN_RPM_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_CONSUMO_ESPC_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_BOOST_PRESSURE_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_VOLTAJE_BATERIA_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_POTENCIA_REAL_1",
+				"type": "String"
+			},
+			{
+				"name": "BL_RPM_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_CONSUMO_ESPC_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_BOOST_PRESSURE_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_VOLTAJE_BATERIA_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_POTENCIA_REAL_1",
+				"type": "String"
+			},
+			{
+				"name": "UB_RPM_1",
+				"type": "String"
+			}
+		]
+	}
+}
