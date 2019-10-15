@@ -1,6 +1,77 @@
 {
 	"name": "PipeDataToSQLJ",
 	"properties": {
+		"activities": [
+			{
+				"name": "Get Mant CSV J",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "CSVDatasetJ",
+						"type": "DatasetReference"
+					},
+					"fieldList": [
+						"childItems"
+					],
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
+				}
+			},
+			{
+				"name": "FECSVJ",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Get Mant CSV J",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Mant CSV J').output.childItems",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "CopyCSVtoSQLJ",
+							"type": "ExecuteDataFlow",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"dataflow": {
+									"referenceName": "CopyCSVtoSQLJ",
+									"type": "DataFlowReference"
+								}
+							}
+						}
+					]
+				}
+			}
+		],
 		"folder": {
 			"name": "Jessi"
 		},
