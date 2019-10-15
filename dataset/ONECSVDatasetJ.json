@@ -1,5 +1,5 @@
 {
-	"name": "CSVDatasetJ",
+	"name": "ONECSVDatasetJ",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",

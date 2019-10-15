@@ -1,0 +1,19 @@
+{
+	"name": "SQLMantJ",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseEcopetrol",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Jessi dataset"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "MANT",
+			"table": "testJ"
+		}
+	}
+}
