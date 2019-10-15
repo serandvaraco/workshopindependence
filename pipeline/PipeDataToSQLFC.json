@@ -1,6 +1,77 @@
 {
 	"name": "PipeDataToSQLFC",
 	"properties": {
+		"activities": [
+			{
+				"name": "Get Mant CSV FC",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "CSVDatasetFC",
+						"type": "DatasetReference"
+					},
+					"fieldList": [
+						"childItems"
+					],
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
+				}
+			},
+			{
+				"name": "FECSVFC",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Get Mant CSV FC",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Mant CSV FC').output.childItems",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "CopyCVStoSQLFC",
+							"type": "ExecuteDataFlow",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"dataflow": {
+									"referenceName": "CopyCVStoSQLFC",
+									"type": "DataFlowReference"
+								}
+							}
+						}
+					]
+				}
+			}
+		],
 		"folder": {
 			"name": "Felipe"
 		},
