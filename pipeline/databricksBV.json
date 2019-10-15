@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/workshop/Mantenimiento/1. ImportDLtoDB"
+					"notebookPath": "/Users/bidesarrollo@independence.com.co/Independence 1/1. ImportDLtoDB"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricksIndependence",
@@ -42,7 +42,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/workshop/Mantenimiento/2. Characterization_data"
+					"notebookPath": "/Users/bidesarrollo@independence.com.co/Independence2/2. Characterization_data"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricksIndependence",
