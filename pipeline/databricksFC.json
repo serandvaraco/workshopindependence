@@ -1,0 +1,58 @@
+{
+	"name": "databricksFC",
+	"properties": {
+		"activities": [
+			{
+				"name": "DLtoDBFC",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/bidesarrollo@independence.com.co/Independence2/1. ImportDLtoDB"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricksIndependence",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "c_dataFC",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "DLtoDBFC",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/bidesarrollo@independence.com.co/Independence2/2. Characterization_data"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricksIndependence",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"folder": {
+			"name": "Felipe"
+		},
+		"annotations": []
+	}
+}
