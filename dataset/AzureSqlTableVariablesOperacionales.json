@@ -1,0 +1,126 @@
+{
+	"name": "AzureSqlTableVariablesOperacionales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseEcopetrol",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "test"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "posicion_bloque",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "velocidad_bloque",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "carga_gancho",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "presion_bomba",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "torque_rotaria",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "torque_llave_hidraulica",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "peso_sobre_broca",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "strokes_acumulados",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "strokes_por_minuto",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "barriles_por_minuto",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "barriles_acumulados",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "profundidad",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "rpm_mesa_rotaria",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "tstm",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "deviceId",
+				"type": "varchar"
+			},
+			{
+				"name": "torque_hidraulica_max",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "valor_pozo",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "numero_pozo",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "torque_potencia_max",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "torque_llave_potencia",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "tlc",
+			"table": "Ecopetrol_Operational_data"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

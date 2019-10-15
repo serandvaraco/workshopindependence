@@ -1,0 +1,20 @@
+{
+	"name": "SQLMantBV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseEcopetrol",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Bigview dataset"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "MANT",
+			"table": "testBV"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

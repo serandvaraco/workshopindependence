@@ -1,0 +1,19 @@
+{
+	"name": "CSVDatasetBV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AZBSSII",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Bigview dataset"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"fileName": "",
+			"folderPath": "mantenimiento/test"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

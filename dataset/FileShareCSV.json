@@ -1,0 +1,22 @@
+{
+	"name": "FileShareCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServerVariablesMantenimiento",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "test"
+		},
+		"annotations": [],
+		"type": "FileShare",
+		"typeProperties": {
+			"compression": {
+				"type": "GZip"
+			},
+			"fileName": "",
+			"folderPath": ""
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

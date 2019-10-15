@@ -1,0 +1,22 @@
+{
+	"name": "AzureBlobStorageVariables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AZBSSII",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "test"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "JsonFormat"
+			},
+			"fileName": "",
+			"folderPath": "torre"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

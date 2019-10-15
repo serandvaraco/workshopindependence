@@ -1,0 +1,74 @@
+{
+	"name": "PipeDataToSQLBV",
+	"properties": {
+		"activities": [
+			{
+				"name": "GetMantCSVBV",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "CSVDatasetBV",
+						"type": "DatasetReference"
+					},
+					"fieldList": [
+						"childItems"
+					]
+				}
+			},
+			{
+				"name": "FECSVBV",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "GetMantCSVBV",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('GetMantCSVBV').output.childItems\n",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "CopyCVStoSQLBV",
+							"type": "ExecuteDataFlow",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"dataflow": {
+									"referenceName": "CopyCVStoSQLBV",
+									"type": "DataFlowReference"
+								}
+							}
+						}
+					]
+				}
+			}
+		],
+		"folder": {
+			"name": "Bigview"
+		},
+		"annotations": []
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
